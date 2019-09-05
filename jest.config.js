@@ -1,5 +1,5 @@
 module.exports = {
   collectCoverageFrom: ['src/components/*.{js,jsx}', '!**/node_modules/**'],
-  setupTestFrameworkScriptFile: './configs/enzyme',
+  setupFilesAfterEnv: ['./configs/enzyme'],
   testPathIgnorePatterns: ['<rootDir>/(build|config|node_modules)/']
 };
